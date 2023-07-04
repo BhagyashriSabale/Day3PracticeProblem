@@ -6,7 +6,7 @@
         {
             Console.WriteLine("Constructor Problem");
             Console.WriteLine("Choose 1 program from below list:");
-            Console.WriteLine("\n1.Constructor \n2.Interface");
+            Console.WriteLine("\n1.Constructor \n2.Interface \n3.AccessSpecifiers");
             int option=Convert.ToInt32(Console.ReadLine());
             switch(option)
             {
@@ -31,6 +31,15 @@
                     dog.MakeSound();
                     cat.MakeSound();
                     Console.ReadLine();
+                    break;
+                case 3:
+                    AccessSpecifiers access = new AccessSpecifiers("Bali", 24, "Ravet");
+                    Console.WriteLine("Person Details:");
+                    Console.WriteLine("Age: " + access.age);
+                    access.DisplayPublicInfo();
+                    Console.WriteLine();
+                    Console.ReadLine();
+
                     break;
 
             }
