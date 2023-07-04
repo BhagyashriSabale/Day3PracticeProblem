@@ -11,16 +11,19 @@ namespace Day3PracticeProblem
       
             public string Name { get; set; }
             public int Age { get; set; }
+            //Default Constuctor
             public Constructor()
             {
               Name = "Unknown";
               Age = 0;
             }
+            //Parameterised Constuctor    
             public Constructor(string name, int age)
             {
               Name = name;
               Age = age;
             }
+            //Cpoy Constuctor
             public Constructor(Constructor otherPerson)
             {
               Name = otherPerson.Name;
