@@ -6,7 +6,7 @@
         {
             Console.WriteLine("Constructor Problem");
             Console.WriteLine("Choose 1 program from below list:");
-            Console.WriteLine("\n1.Constructor");
+            Console.WriteLine("\n1.Constructor \n2.Interface");
             int option=Convert.ToInt32(Console.ReadLine());
             switch(option)
             {
@@ -25,6 +25,13 @@
 
                     Console.ReadLine();
                break;
+                case 2:
+                    Interface1 dog = new Dog();
+                    Interface1 cat = new cat();
+                    dog.MakeSound();
+                    cat.MakeSound();
+                    Console.ReadLine();
+                    break;
 
             }
         }
